@@ -116,6 +116,62 @@
 				</div>
 			</form>
 
+			<!-- rdm table -->
+			<div class="banner-center">
+				<h3>
+					<span>RDM</span>
+				</h3>
+			</div>
+			<div class="bs-docs-example animated wow fadeInUp"
+				data-wow-duration="1000ms" data-wow-delay="500ms"
+				style="padding-left: 10%; padding-right: 10%; padding-bottom: 5%">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Direction Name</th>
+							<th>RDM</th>
+							<th>Status</th>
+							<th colspan="2">Change</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2">1</td>
+							<td rowspan="2">Direction1</td>
+							<td rowspan="2">rdm1</td>
+							<td rowspan="2">active</td>
+							<td><a href="#">Edit</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">Delete</a></td>
+						</tr>
+
+						<tr>
+							<td rowspan="2">2</td>
+							<td rowspan="2">Direction2</td>
+							<td rowspan="2">rdm2</td>
+							<td rowspan="2">active</td>
+							<td><a href="#">Edit</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">Delete</a></td>
+						</tr>
+
+						<tr>
+							<td rowspan="2">3</td>
+							<td rowspan="2">Direction3</td>
+							<td rowspan="2">rdm3</td>
+							<td rowspan="2">active</td>
+							<td><a href="#">Edit</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">Delete</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //rdm table -->
 		</div>
 	</div>
 

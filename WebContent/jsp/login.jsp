@@ -8,7 +8,8 @@
 
 <link href="/EPM-CAS/css/bootstrap.css" rel="stylesheet" type="text/css"
 	media="all" />
-<link href="/EPM-CAS/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/EPM-CAS/css/style.css" rel="stylesheet" type="text/css"
+	media="all" />
 </head>
 
 <body>
@@ -68,9 +69,10 @@
 							<input type="text" name="login" placeholder="Username"
 								required=" "> <input type="password" name="password"
 								placeholder="Password" required=" "><br />
-							${errorLoginPassMessage} <br /> ${wrongAction} <br /> ${nullPage}
-							<br /> <input type="submit" value="Log in"> <input
-								type="submit" value="Registry">
+							${errorLoginPassMessage} <br /> ${wrongAction} <br />
+							${nullPage} <br /> <input type="submit" value="Log in">
+							<!-- <input
+								type="submit" value="Registry"> -->
 						</div>
 					</div>
 				</div>
