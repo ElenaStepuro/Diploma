@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/javaee"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	id="WebApp_ID" version="2.5">
-	<display-name>EPM-CAS</display-name>
-	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
-	</welcome-file-list>
-	<error-page>
-		<error-code>404</error-code>
-		<location>/jsp/error/error.jsp</location>
-	</error-page>
-	<error-page>
-		<exception-type>java.lang.RuntimeException</exception-type>
-		<location>/jsp/error/error.jsp</location>
-	</error-page>
-	<servlet>
-		<description></description>
-		<display-name>Controller</display-name>
-		<servlet-name>Controller</servlet-name>
-		<servlet-class>com.epam.elena_stepuro.epm_cas.controller.servlet.Controller</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Controller</servlet-name>
-		<url-pattern>/controller</url-pattern>
-	</servlet-mapping>
-	<listener>
-		<listener-class>com.epam.elena_stepuro.epm_cas.controller.listener.SessionClosed</listener-class>
-	</listener>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>EPM-CAS</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/jsp/error/error.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.RuntimeException</exception-type>
+    <location>/jsp/error/error.jsp</location>
+  </error-page>
+  <servlet>
+    <description></description>
+    <display-name>Controller</display-name>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>com.epam.elena_stepuro.epm_cas.controller.servlet.Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/controller</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.epam.elena_stepuro.epm_cas.controller.listener.SessionClosed</listener-class>
+  </listener>
+  <filter>
+    <display-name>LoginFilter</display-name>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>com.epam.elena_stepuro.epm_cas.controller.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/LoginFilter</url-pattern>
+  </filter-mapping>
 </web-app>
