@@ -96,13 +96,18 @@
 				<div class="input-group animated wow fadeInUp"
 					data-wow-duration="1000ms" data-wow-delay="500ms">
 					<span class="input-group-addon" id="basic-addon1">Direction
-						name</span> <input type="text" class="form-control" placeholder="name">
-					<span class="input-group-addon" id="basic-addon2">RDM</span> <select
+						name</span><select class="form-control" name="select-direction">
+						<option selected="Java Web Programming">Java Web
+							Programming</option>
+						<option>Web Development in C# and Microsoft.Net</option>
+						<option>Software Testing Automation Basics</option>
+						<option>Business Analysis in IT</option>
+						<option>Front-End Basics</option>
+					</select> <span class="input-group-addon" id="basic-addon2">RDM</span> <select
 						class="form-control" name="select-rdm">
-						<option selected="rdm">rdm</option>
-						<option>rdm1</option>
-						<option>rdm2</option>
-						<option>rdm3</option>
+						<option selected="LastName FirstName">LastName FirstName</option>
+						<option>LastName FirstName</option>
+						<option>LastName FirstName</option>
 					</select>
 				</div>
 
@@ -230,7 +235,7 @@
 				</div>
 				<div class="col-md-3 footer-grid">
 					<ul>
-						<li><a href="#">Link</a></li>
+						<li><a href="/EPM-CAS/controller?command=logout">Log out</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
