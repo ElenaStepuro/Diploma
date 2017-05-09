@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -82,17 +84,16 @@
 	<!-- person -->
 	<div class="about">
 		<div class="container">
+			<div class="banner-center">
+				<h3>
+					<span>Persons</span>
+				</h3>
+			</div>
 
-			<!-- add persons -->
+			<!-- edit persons -->
 			<form action="controller" method="get">
-				<div class="banner-center">
-					<h3>
-						<span>Persons</span>
-					</h3>
-				</div>
-
 				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
-					data-wow-delay="500ms">New person</h3>
+					data-wow-delay="500ms">Edit person</h3>
 
 				<div class="input-group animated wow fadeInUp"
 					data-wow-duration="1000ms" data-wow-delay="500ms">
@@ -202,11 +203,139 @@
 				<div class="grid_3 grid_5 animated wow fadeInUp"
 					data-wow-duration="1000ms" data-wow-delay="500ms">
 					<h2>
-						<a href="/EPM-CAS/controller?command=add_person"><span
-							class="label label-warning">Add person</span></a>
+						<a href="#"><span class="label label-warning">Update
+								person</span></a>
+					</h2>
+					<h2>
+						<a href="#"><span class="label label-warning">Cancel</span></a>
 					</h2>
 				</div>
 			</form>
+			<!-- //edit persons -->
+
+			<!-- add persons -->
+			<c:if test="${!com.equals('EDIT') }">
+				<form action="controller" method="get">
+					<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+						data-wow-delay="500ms">New person</h3>
+
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3">Person
+							information</span>
+					</div>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon1">Lastname</span>
+						<input type="text" class="form-control" placeholder="lastname">
+						<span class="input-group-addon" id="basic-addon2">Firstname</span>
+						<input type="text" class="form-control" placeholder="firstname"><span
+							class="input-group-addon" id="basic-addon3">Patronymic</span> <input
+							type="text" class="form-control" placeholder="patronymic">
+					</div>
+
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3">Contacts</span>
+					</div>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon1">E-mail</span> <input
+							type="text" class="form-control" placeholder="E-mail"> <span
+							class="input-group-addon" id="basic-addon2">Skype</span> <input
+							type="text" class="form-control" placeholder="Skype"><span
+							class="input-group-addon" id="basic-addon3">Phone</span> <input
+							type="text" class="form-control" placeholder="Phone">
+					</div>
+
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3">English</span>
+					</div>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon1">TA Level</span>
+						<select class="form-control" name="select-ta level">
+							<option selected="courses">special school/courses</option>
+							<option>A0</option>
+							<option>A1</option>
+							<option>A1+</option>
+							<option>A2</option>
+							<option>A2+</option>
+							<option>B1</option>
+							<option>B1+</option>
+							<option>B2</option>
+							<option>B2+</option>
+							<option>C1</option>
+							<option>C1+</option>
+							<option>C2</option>
+						</select> <span class="input-group-addon" id="basic-addon1">s Level</span>
+						<select class="form-control" name="select-s level">
+							<option selected="courses">special school/courses</option>
+							<option>A0</option>
+							<option>A1</option>
+							<option>A1+</option>
+							<option>A2</option>
+							<option>A2+</option>
+							<option>B1</option>
+							<option>B1+</option>
+							<option>B2</option>
+							<option>B2+</option>
+							<option>C1</option>
+							<option>C1+</option>
+							<option>C2</option>
+						</select> <span class="input-group-addon" id="basic-addon1">w Level</span>
+						<select class="form-control" name="select-S level">
+							<option selected="courses">special school/courses</option>
+							<option>A0</option>
+							<option>A1</option>
+							<option>A1+</option>
+							<option>A2</option>
+							<option>A2+</option>
+							<option>B1</option>
+							<option>B1+</option>
+							<option>B2</option>
+							<option>B2+</option>
+							<option>C1</option>
+							<option>C1+</option>
+							<option>C2</option>
+						</select>
+					</div>
+
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3">Another
+							information</span>
+					</div>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon1">Army</span> <select
+							class="form-control" name="select-army">
+							<option selected="Draft">Draft</option>
+							<option>Not draft</option>
+							<option>At the military department</option>
+						</select> <span class="input-group-addon" id="basic-addon3">Working
+							place</span> <input type="text" class="form-control"
+							placeholder="Working place">
+					</div>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3">How did
+							you know about us?</span> <input type="text" class="form-control">
+					</div>
+
+					<div class="grid_3 grid_5 animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<h2>
+							<a href="/EPM-CAS/controller?command=add_person"><span
+								class="label label-warning">Add person</span></a>
+						</h2>
+						<h2>
+							<a href="#"><span class="label label-warning">Cancel</span></a>
+						</h2>
+					</div>
+				</form>
+			</c:if>
 			<!-- //add persons -->
 
 			<!-- persons table -->
@@ -295,16 +424,16 @@
 			</div>
 			<!-- //persons table -->
 
-			<!-- add candidates -->
-			<form action="controller" method="get">
-				<div class="banner-center">
-					<h3>
-						<span>Candidates</span>
-					</h3>
-				</div>
 
+			<div class="banner-center">
+				<h3>
+					<span>Candidates</span>
+				</h3>
+			</div>
+			<!-- Edit candidates -->
+			<form action="controller" method="get">
 				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
-					data-wow-delay="500ms">New candidate</h3>
+					data-wow-delay="500ms">Edit candidate</h3>
 
 				<div class="input-group animated wow fadeInUp"
 					data-wow-duration="1000ms" data-wow-delay="500ms">
@@ -325,10 +454,48 @@
 					data-wow-duration="1000ms" data-wow-delay="500ms">
 					<h2>
 						<a href="/EPM-CAS/controller?command=add_candidate"><span
-							class="label label-warning">Add candidate</span></a>
+							class="label label-warning">Update candidate</span></a>
+					</h2>
+					<h2>
+						<a href="#"><span class="label label-warning">Cancel</span></a>
 					</h2>
 				</div>
 			</form>
+			<!-- //edit candidate -->
+
+			<!-- add candidates -->
+			<c:if test="${!com.equals('EDIT') }">
+				<form action="controller" method="get">
+					<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+						data-wow-delay="500ms">New candidate</h3>
+
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon2">Person</span> <select
+							class="form-control" name="select-person">
+							<option selected="person">personLastName personFirstName</option>
+							<option>personLastName personFirstName</option>
+							<option>personLastName personFirstName</option>
+						</select> <span class="input-group-addon" id="basic-addon2">Requisition
+							number</span> <select class="form-control" name="select-requisition">
+							<option selected="requisition">1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</div>
+
+					<div class="grid_3 grid_5 animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<h2>
+							<a href="/EPM-CAS/controller?command=add_candidate"><span
+								class="label label-warning">Add candidate</span></a>
+						</h2>
+						<h2>
+							<a href="#"><span class="label label-warning">Cancel</span></a>
+						</h2>
+					</div>
+				</form>
+			</c:if>
 			<!-- //add candidate -->
 
 			<!-- candidates table -->

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -82,15 +84,16 @@
 	<!-- RDM -->
 	<div class="about">
 		<div class="container">
-			<form action="controller" method="get">
-				<div class="banner-center">
-					<h3>
-						<span>RDM</span>
-					</h3>
-				</div>
+			<div class="banner-center">
+				<h3>
+					<span>RDM</span>
+				</h3>
+			</div>
 
+			<!-- edit rdm -->
+			<form action="controller" method="get">
 				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
-					data-wow-delay="500ms">New RDM</h3>
+					data-wow-delay="500ms">Edit RDM</h3>
 
 				<div class="input-group animated wow fadeInUp"
 					data-wow-duration="1000ms" data-wow-delay="500ms">
@@ -111,10 +114,49 @@
 					data-wow-duration="1000ms" data-wow-delay="500ms">
 					<h2>
 						<a href="/EPM-CAS/controller?command=add_rdm"><span
-							class="label label-warning">Add RDM</span></a>
+							class="label label-warning">Update RDM</span></a>
+					</h2>
+					<h2>
+						<a href="#"><span class="label label-warning">Cancel</span></a>
 					</h2>
 				</div>
 			</form>
+			<!-- //edit rdm -->
+
+			<!-- add rdm -->
+			<c:if test="${!com.equals('EDIT') }">
+				<form action="controller" method="get">
+					<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+						data-wow-delay="500ms">New RDM</h3>
+
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon1">Lastname</span>
+						<input type="text" class="form-control" placeholder="lastname">
+						<span class="input-group-addon" id="basic-addon2">Firstname</span>
+						<input type="text" class="form-control" placeholder="firstname">
+					</div>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3">Patronymic</span>
+						<input type="text" class="form-control" placeholder="patronymic">
+						<span class="input-group-addon" id="basic-addon4">Position</span>
+						<input type="text" class="form-control" placeholder="position">
+					</div>
+
+					<div class="grid_3 grid_5 animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<h2>
+							<a href="/EPM-CAS/controller?command=add_rdm"><span
+								class="label label-warning">Add RDM</span></a>
+						</h2>
+						<h2>
+							<a href="#"><span class="label label-warning">Cancel</span></a>
+						</h2>
+					</div>
+				</form>
+			</c:if>
+			<!-- //add rdm -->
 
 			<!-- rdm table -->
 			<div class="banner-center">

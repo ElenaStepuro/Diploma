@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -80,70 +82,134 @@
 	<!-- //baner -->
 
 	<!-- direction -->
-	<!-- add direction -->
 	<div class="about">
 		<div class="container">
-			<form action="controller" method="get">
-				<div class="banner-center">
-					<h3>
-						<span>Direction</span>
-					</h3>
-				</div>
 
-				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
-					data-wow-delay="500ms">New direction</h3>
+			<div class="banner-center">
+				<h3>
+					<span>Direction</span>
+				</h3>
+			</div>
 
-				<div class="input-group animated wow fadeInUp"
-					data-wow-duration="1000ms" data-wow-delay="500ms">
-					<span class="input-group-addon" id="basic-addon1">Direction
-						name</span><select class="form-control" name="select-direction">
-						<option selected="Java Web Programming">Java Web
-							Programming</option>
-						<option>Web Development in C# and Microsoft.Net</option>
-						<option>Software Testing Automation Basics</option>
-						<option>Business Analysis in IT</option>
-						<option>Front-End Basics</option>
-					</select> <span class="input-group-addon" id="basic-addon2">RDM</span> <select
-						class="form-control" name="select-rdm">
-						<option selected="LastName FirstName">LastName FirstName</option>
-						<option>LastName FirstName</option>
-						<option>LastName FirstName</option>
-					</select>
-				</div>
+			<!-- edit direction -->
+			<c:if test="${com.equals('EDIT') }">
+				<form action="controller" method="get">
+					<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+						data-wow-delay="500ms">Edit direction</h3>
 
-				<div class="input-group animated wow fadeInUp"
-					data-wow-duration="1000ms" data-wow-delay="500ms">
-					<span class="input-group-addon" id="basic-addon2">Status</span>
-					<div class="col-lg-6 in-gr-tb">
-						<div class="input=group">
-							<div class="input=group-addon">
-								<input type="radio" name="command" value="active"><span>
-									active</span>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon1">Direction
+							name</span><select class="form-control" name="select-direction">
+							<option selected="Java Web Programming">Java Web
+								Programming</option>
+							<option>Web Development in C# and Microsoft.Net</option>
+							<option>Software Testing Automation Basics</option>
+							<option>Business Analysis in IT</option>
+							<option>Front-End Basics</option>
+						</select> <span class="input-group-addon" id="basic-addon2">RDM</span> <select
+							class="form-control" name="select-rdm">
+							<option selected="LastName FirstName">LastName FirstName</option>
+							<option>LastName FirstName</option>
+							<option>LastName FirstName</option>
+						</select>
+					</div>
+
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon2">Status</span>
+						<div class="col-lg-6 in-gr-tb">
+							<div class="input=group">
+								<div class="input=group-addon">
+									<input type="radio" name="command" value="active"><span>
+										active</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 in-gr-tb">
+							<div class="input=group">
+								<div class="input=group-addon">
+									<input type="radio" name="command" value="not active"><span>
+										not active</span>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 in-gr-tb">
-						<div class="input=group">
-							<div class="input=group-addon">
-								<input type="radio" name="command" value="not active"><span>
-									not active</span>
+
+					<div class="grid_3 grid_5 animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<h2>
+							<a href="#"><span class="label label-warning">Update
+									direction</span></a>
+						</h2>
+						<h2>
+							<a href="#"><span class="label label-warning">Cancel</span></a>
+						</h2>
+					</div>
+				</form>
+			</c:if>
+			<!-- //edit direction -->
+
+			<!-- add direction -->
+			<c:if test="${!com.equals('EDIT') }">
+				<form action="controller" method="get">
+					<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+						data-wow-delay="500ms">New direction</h3>
+
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon1">Direction
+							name</span><select class="form-control" name="select-direction">
+							<option selected="Java Web Programming">Java Web
+								Programming</option>
+							<option>Web Development in C# and Microsoft.Net</option>
+							<option>Software Testing Automation Basics</option>
+							<option>Business Analysis in IT</option>
+							<option>Front-End Basics</option>
+						</select> <span class="input-group-addon" id="basic-addon2">RDM</span> <select
+							class="form-control" name="select-rdm">
+							<option selected="LastName FirstName">LastName FirstName</option>
+							<option>LastName FirstName</option>
+							<option>LastName FirstName</option>
+						</select>
+					</div>
+
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon2">Status</span>
+						<div class="col-lg-6 in-gr-tb">
+							<div class="input=group">
+								<div class="input=group-addon">
+									<input type="radio" name="command" value="active"><span>
+										active</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 in-gr-tb">
+							<div class="input=group">
+								<div class="input=group-addon">
+									<input type="radio" name="command" value="not active"><span>
+										not active</span>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="grid_3 grid_5 animated wow fadeInUp"
-					data-wow-duration="1000ms" data-wow-delay="500ms">
-					<h2>
-						<a href="/EPM-CAS/controller?command=add_direction"><span
-							class="label label-warning">Add direction</span></a>
-					</h2>
-				</div>
-			</form>
-
+					<div class="grid_3 grid_5 animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<h2>
+							<a href="/EPM-CAS/controller?command=add_direction"><span
+								class="label label-warning">Add direction</span></a>
+						</h2>
+						<h2>
+							<a href="#"><span class="label label-warning">Cancel</span></a>
+						</h2>
+					</div>
+				</form>
+			</c:if>
+			<!-- //add direction -->
 		</div>
 	</div>
-	<!-- //add direction -->
 
 	<!-- direction table -->
 	<div class="banner-center">

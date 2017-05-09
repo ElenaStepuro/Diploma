@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -82,15 +84,16 @@
 	<!-- requisition -->
 	<div class="about">
 		<div class="container">
-			<form action="controller" method="get">
-				<div class="banner-center">
-					<h3>
-						<span>Requisition</span>
-					</h3>
-				</div>
+			<div class="banner-center">
+				<h3>
+					<span>Requisition</span>
+				</h3>
+			</div>
 
+			<!-- edit requisition -->
+			<form action="controller" method="get">
 				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
-					data-wow-delay="500ms">New requisition</h3>
+					data-wow-delay="500ms">Edit requisition</h3>
 
 				<div class="input-group animated wow fadeInUp"
 					data-wow-duration="1000ms" data-wow-delay="500ms">
@@ -129,10 +132,67 @@
 					data-wow-duration="1000ms" data-wow-delay="500ms">
 					<h2>
 						<a href="/EPM-CAS/controller?command=add_requisition"><span
-							class="label label-warning">Add requistion</span></a>
+							class="label label-warning">Update requistion</span></a>
+					</h2>
+					<h2>
+						<a href="#"><span class="label label-warning">Cancel</span></a>
 					</h2>
 				</div>
 			</form>
+			<!-- //edit requisition -->
+
+			<!-- add requisition -->
+			<c:if test="${!com.equals('EDIT') }">
+				<form action="controller" method="get">
+					<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+						data-wow-delay="500ms">New requisition</h3>
+
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3"
+							placeholder="course title">Course title</span> <input type="text"
+							class="form-control"> <span class="input-group-addon"
+							id="basic-addon2">Training direction</span> <select
+							class="form-control" name="select-direction">
+							<option selected="Java Web Programming">Java Web
+								Programming</option>
+							<option>Web Development in C# and Microsoft.Net</option>
+							<option>Software Testing Automation Basics</option>
+							<option>Business Analysis in IT</option>
+							<option>Front-End Basics</option>
+						</select><span class="input-group-addon" id="basic-addon2">Course
+							type</span>
+						<div class="col-lg-6 in-gr-tb">
+							<div class="input=group">
+								<div class="input=group-addon">
+									<input type="radio" name="command" value="external"><span>
+										external</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 in-gr-tb">
+							<div class="input=group">
+								<div class="input=group-addon">
+									<input type="radio" name="command" value="internal"><span>
+										internal</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid_3 grid_5 animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<h2>
+							<a href="/EPM-CAS/controller?command=add_requisition"><span
+								class="label label-warning">Add requistion</span></a>
+						</h2>
+						<h2>
+							<a href="#"><span class="label label-warning">Cancel</span></a>
+						</h2>
+					</div>
+				</form>
+			</c:if>
+			<!-- //add requisition -->
 
 			<!-- requisition table -->
 			<div class="banner-center">
