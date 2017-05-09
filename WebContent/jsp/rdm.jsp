@@ -170,15 +170,6 @@
 			<!-- //rdm table -->
 		</div>
 	</div>
-
-	<div class="about-bottom">
-		<div class="container">
-			<div class="about-bottom-grid"">
-				<span></span>
-			</div>
-			<h3>Something</h3>
-		</div>
-	</div>
 	<!-- //RDM -->
 
 	<!-- footer -->

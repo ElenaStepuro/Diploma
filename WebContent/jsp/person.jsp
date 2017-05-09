@@ -221,137 +221,74 @@
 				<table class="table table-bordered">
 					<thead>
 						<tr>
-							<th>#</th>
-							<th>Person information</th>
-							<th colspan="3" rowspan="2">Contacts</th>
-							<th colspan="3" rowspan="2">English</th>
-							<th colspan="2" rowspan="2">Another information</th>
-							<th colspan="2">Change</th>
+							<th rowspan="2">#</th>
+							<th rowspan="2">Person information</th>
+							<th colspan="3">Contacts</th>
+							<th colspan="3">English</th>
+							<th colspan="2">Another information</th>
+							<th colspan="2" rowspan="2">Change</th>
+						</tr>
+						<tr>
+							<td>E-mail</td>
+							<td>Skype</td>
+							<td>Phone</td>
+							<td>TA</td>
+							<td>S</td>
+							<td>W</td>
+							<td>Army</td>
+							<td>Job</td>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td rowspan="2">1</td>
 							<td rowspan="2">LastName FirstName Patronymic</td>
-
-							<td>E-mail</td>
-						<tr>
-							<td>@gmail.com</td>
-						</tr>
-						<td>Skype</td>
-						<tr>
-							<td>mars190</td>
-						</tr>
-						<td>Phone</td>
-						<tr>
-							<td>+79521260733</td>
-						</tr>
-
-						<td>TA</td>
-						<tr>
-							<td>A2+</td>
-						</tr>
-						<td>S</td>
-						<tr>
-							<td>A2+</td>
-						</tr>
-						<td>W</td>
-						<tr>
-							<td>A2+</td>
-						</tr>
-						<td>Army</td>
-						<tr>
-							<td>Not draft</td>
-						</tr>
-						<td>Job</td>
-						<tr>
-							<td>no</td>
-						</tr>
-						<td><a href="#">Edit</a></td>
+							<td rowspan="2">@gmail.com</td>
+							<td rowspan="2">mars190</td>
+							<td rowspan="2">+79521260733</td>
+							<td rowspan="2">A2+</td>
+							<td rowspan="2">A2+</td>
+							<td rowspan="2">A2+</td>
+							<td rowspan="2">Not draft</td>
+							<td rowspan="2">no</td>
+							<td><a href="#">Edit</a></td>
 						<tr>
 							<td><a href="#">Delete</a></td>
+						</tr>
 						</tr>
 
 						<tr>
 							<td rowspan="2">2</td>
 							<td rowspan="2">LastName FirstName Patronymic</td>
-							<td>E-mail</td>
-						<tr>
-							<td>@gmail.com</td>
-						</tr>
-
-						<td>Skype</td>
-						<tr>
-							<td>mars190</td>
-						</tr>
-
-						<td>Phone</td>
-						<tr>
-							<td>+79521260733</td>
-						</tr>
-						<td>TA</td>
-						<tr>
-							<td>A2+</td>
-						</tr>
-						<td>S</td>
-						<tr>
-							<td>A2+</td>
-						</tr>
-						<td>W</td>
-						<tr>
-							<td>A2+</td>
-						</tr>
-						<td>Army</td>
-						<tr>
-							<td>Not draft</td>
-						</tr>
-						<td>Job</td>
-						<tr>
-							<td>no</td>
-						</tr>
-						<td><a href="#">Edit</a></td>
+							<td rowspan="2">@gmail.com</td>
+							<td rowspan="2">mars190</td>
+							<td rowspan="2">+79521260733</td>
+							<td rowspan="2">A2+</td>
+							<td rowspan="2">A2+</td>
+							<td rowspan="2">A2+</td>
+							<td rowspan="2">Not draft</td>
+							<td rowspan="2">no</td>
+							<td><a href="#">Edit</a></td>
 						<tr>
 							<td><a href="#">Delete</a></td>
+						</tr>
 						</tr>
 
 						<tr>
 							<td rowspan="2">3</td>
 							<td rowspan="2">LastName FirstName Patronymic</td>
-							<td>E-mail</td>
-						<tr>
-							<td>@gmail.com</td>
-						</tr>
-						<td>Skype</td>
-						<tr>
-							<td>mars190</td>
-						</tr>
-						<td>Phone</td>
-						<tr>
-							<td>+79521260733</td>
-						</tr>
-						<td>TA</td>
-						<tr>
-							<td>A2+</td>
-						</tr>
-						<td>S</td>
-						<tr>
-							<td>A2+</td>
-						</tr>
-						<td>W</td>
-						<tr>
-							<td>A2+</td>
-						</tr>
-						<td>Army</td>
-						<tr>
-							<td>Not draft</td>
-						</tr>
-						<td>Job</td>
-						<tr>
-							<td>no</td>
-						</tr>
-						<td><a href="#">Edit</a></td>
+							<td rowspan="2">@gmail.com</td>
+							<td rowspan="2">mars190</td>
+							<td rowspan="2">+79521260733</td>
+							<td rowspan="2">A2+</td>
+							<td rowspan="2">A2+</td>
+							<td rowspan="2">A2+</td>
+							<td rowspan="2">Not draft</td>
+							<td rowspan="2">no</td>
+							<td><a href="#">Edit</a></td>
 						<tr>
 							<td><a href="#">Delete</a></td>
+						</tr>
 						</tr>
 					</tbody>
 				</table>
