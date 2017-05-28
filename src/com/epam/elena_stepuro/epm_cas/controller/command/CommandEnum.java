@@ -7,6 +7,7 @@ import com.epam.elena_stepuro.epm_cas.controller.command.add.AddRDM;
 import com.epam.elena_stepuro.epm_cas.controller.command.add.AddRequisition;
 import com.epam.elena_stepuro.epm_cas.controller.command.login.LoginCommand;
 import com.epam.elena_stepuro.epm_cas.controller.command.logout.LogoutCommand;
+import com.epam.elena_stepuro.epm_cas.controller.command.show.ShowAnalisys;
 import com.epam.elena_stepuro.epm_cas.controller.command.show.ShowDirection;
 import com.epam.elena_stepuro.epm_cas.controller.command.show.ShowPerson;
 import com.epam.elena_stepuro.epm_cas.controller.command.show.ShowRDM;
@@ -42,6 +43,11 @@ public enum CommandEnum {
 	SHOW_REQUISITION {
 		{
 			this.command = new ShowRequisition();
+		}
+	},
+	SHOW_ANALYS {
+		{
+			this.command = new ShowAnalisys();
 		}
 	},
 	ADD_DIRECTION {

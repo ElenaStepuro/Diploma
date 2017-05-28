@@ -58,7 +58,10 @@
 							class="hvr-bounce-to-bottom">Persons</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_rdm"
 							class="hvr-bounce-to-bottom">RDM</a></li>
-						<li class="active"><a href="requisition.html">Requisition</a></li>
+						<li class="active"><a
+							href="/EPM-CAS/controller?command=show_requisition">Requisition</a></li>
+						<li><a href="/EPM-CAS/controller?command=show_analys"
+							class="hvr-bounce-to-bottom">Analysis</a></li>
 						<li><a href="/EPM-CAS/controller?command=logout"
 							class="hvr-bounce-to-bottom">Logout</a></li>
 					</ul>
@@ -281,6 +284,7 @@
 				</div>
 				<div class="col-md-3 footer-grid">
 					<ul>
+						<li><a href="/EPM-CAS/controller?command=show_analys">Analysis</a></li>
 						<li><a href="/EPM-CAS/controller?command=logout">Log out</a></li>
 					</ul>
 				</div>

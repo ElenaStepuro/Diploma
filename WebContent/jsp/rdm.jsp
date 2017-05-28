@@ -59,6 +59,8 @@
 						<li class="active"><a href="rdm.html">RDM</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_requisition"
 							class="hvr-bounce-to-bottom">Requisition</a></li>
+						<li><a href="/EPM-CAS/controller?command=show_analys"
+							class="hvr-bounce-to-bottom">Analysis</a></li>
 						<li><a href="/EPM-CAS/controller?command=logout"
 							class="hvr-bounce-to-bottom">Logout</a></li>
 					</ul>
@@ -109,6 +111,11 @@
 					<span class="input-group-addon" id="basic-addon4">Position</span> <input
 						type="text" class="form-control" placeholder="position">
 				</div>
+				<div class="input-group animated wow fadeInUp"
+					data-wow-duration="1000ms" data-wow-delay="500ms">
+					<span class="input-group-addon" id="basic-addon3">Password</span> <input
+						type="text" class="form-control" placeholder="password">
+				</div>
 
 				<div class="grid_3 grid_5 animated wow fadeInUp"
 					data-wow-duration="1000ms" data-wow-delay="500ms">
@@ -143,7 +150,11 @@
 						<span class="input-group-addon" id="basic-addon4">Position</span>
 						<input type="text" class="form-control" placeholder="position">
 					</div>
-
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3">Password</span>
+						<input type="text" class="form-control" placeholder="password">
+					</div>
 					<div class="grid_3 grid_5 animated wow fadeInUp"
 						data-wow-duration="1000ms" data-wow-delay="500ms">
 						<h2>
@@ -245,6 +256,7 @@
 				</div>
 				<div class="col-md-3 footer-grid">
 					<ul>
+						<li><a href="/EPM-CAS/controller?command=show_analys">Analysis</a></li>
 						<li><a href="/EPM-CAS/controller?command=logout">Log out</a></li>
 					</ul>
 				</div>

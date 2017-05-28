@@ -59,6 +59,8 @@
 							class="hvr-bounce-to-bottom">RDM</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_requisition"
 							class="hvr-bounce-to-bottom">Requisition</a></li>
+						<li><a href="/EPM-CAS/controller?command=show_analys"
+							class="hvr-bounce-to-bottom">Analysis</a></li>
 						<li><a href="/EPM-CAS/controller?command=logout"
 							class="hvr-bounce-to-bottom">Logout</a></li>
 					</ul>
@@ -92,7 +94,7 @@
 			</div>
 
 			<!-- edit direction -->
-			<c:if test="${com.equals('EDIT') }">
+			<c:if test="${!com.equals('EDIT') }">
 				<form action="controller" method="get">
 					<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
 						data-wow-delay="500ms">Edit direction</h3>
@@ -301,6 +303,7 @@
 				</div>
 				<div class="col-md-3 footer-grid">
 					<ul>
+						<li><a href="/EPM-CAS/controller?command=show_analys">Analysis</a></li>
 						<li><a href="/EPM-CAS/controller?command=logout">Log out</a></li>
 					</ul>
 				</div>
