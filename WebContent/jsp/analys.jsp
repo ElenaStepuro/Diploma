@@ -83,12 +83,156 @@
 		</div>
 	</div>
 	<!-- //baner -->
-	
-	<!-- topic diagram -->
-	<!-- // topic diagram -->
-	
-	<!-- rating diagram -->
-	<!-- // rating diagram -->
+
+	<!-- students table -->
+	<div class="about">
+		<div class="container">
+			<div class="banner-center">
+				<h3>
+					<span>Java Web Programming</span>
+				</h3>
+			</div>
+
+			<form action="controller" method="get">
+				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+					data-wow-delay="500ms">Academic performance</h3>
+				<div class="bs-docs-example animated wow fadeInUp"
+					data-wow-duration="1000ms" data-wow-delay="500ms"
+					style="padding-bottom: 5%">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Student</th>
+								<th>Java basics</th>
+								<th>Object Oriented Programming</th>
+								<th>Errors and exceptions</th>
+								<th>Input and output stream</th>
+								<th>Data processing</th>
+								<th>Collections</th>
+								<th>Multithreaded programming</th>
+								<th>Java & XML</th>
+								<th>SQL basics and relational databases</th>
+								<th>JDBC 4.0</th>
+								<th>Servlets basics</th>
+								<th>JSP basics</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Student</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+					data-wow-delay="500ms">Attendance</h3>
+				<div class="bs-docs-example animated wow fadeInUp"
+					data-wow-duration="1000ms" data-wow-delay="500ms"
+					style="padding-bottom: 5%">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Student</th>
+								<th>Java basics</th>
+								<th>Object Oriented Programming</th>
+								<th>Errors and exceptions</th>
+								<th>Input and output stream</th>
+								<th>Data processing</th>
+								<th>Collections</th>
+								<th>Multithreaded programming</th>
+								<th>Java & XML</th>
+								<th>SQL basics and relational databases</th>
+								<th>JDBC 4.0</th>
+								<th>Servlets basics</th>
+								<th>JSP basics</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Student</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+					data-wow-delay="500ms">Analysis</h3>
+				<div class="bs-docs-example animated wow fadeInUp"
+					data-wow-duration="1000ms" data-wow-delay="500ms"
+					style="padding-bottom: 5%">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Student</th>
+								<th>Java basics</th>
+								<th>Object Oriented Programming</th>
+								<th>Errors and exceptions</th>
+								<th>Input and output stream</th>
+								<th>Data processing</th>
+								<th>Collections</th>
+								<th>Multithreaded programming</th>
+								<th>Java & XML</th>
+								<th>SQL basics and relational databases</th>
+								<th>JDBC 4.0</th>
+								<th>Servlets basics</th>
+								<th>JSP basics</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Student</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</form>
+
+			<!-- topic diagram -->
+			<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+				data-wow-delay="500ms">Average lag by topics</h3>
+			<!-- // topic diagram -->
+
+		</div>
+	</div>
+	<!-- // students table -->
 
 	<!-- footer -->
 	<div class="footer">

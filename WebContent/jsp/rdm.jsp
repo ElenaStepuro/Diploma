@@ -56,7 +56,7 @@
 							class="hvr-bounce-to-bottom">Direction</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_person"
 							class="hvr-bounce-to-bottom">Persons</a></li>
-						<li class="active"><a href="rdm.html">RDM</a></li>
+						<li class="active"><a href="/EPM-CAS/controller?command=show_rdm">RDM</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_requisition"
 							class="hvr-bounce-to-bottom">Requisition</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_analys"
@@ -184,6 +184,7 @@
 							<th>#</th>
 							<th>RDM Name</th>
 							<th>Position</th>
+							<th>Password</th>
 							<th colspan="2">Change</th>
 						</tr>
 					</thead>
@@ -192,6 +193,7 @@
 							<td rowspan="2">1</td>
 							<td rowspan="2">LastName FirstName Patronymic</td>
 							<td rowspan="2">Position1</td>
+							<td rowspan="2">Password</td>
 							<td><a href="#">Edit</a></td>
 						</tr>
 						<tr>
@@ -202,6 +204,7 @@
 							<td rowspan="2">2</td>
 							<td rowspan="2">LastName FirstName Patronymic</td>
 							<td rowspan="2">Position2</td>
+							<td rowspan="2">Password</td>
 							<td><a href="#">Edit</a></td>
 						</tr>
 						<tr>
@@ -212,6 +215,7 @@
 							<td rowspan="2">3</td>
 							<td rowspan="2">LastName FirstName Patronymic</td>
 							<td rowspan="2">Position3</td>
+							<td rowspan="2">Password</td>
 							<td><a href="#">Edit</a></td>
 						</tr>
 						<tr>

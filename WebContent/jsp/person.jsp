@@ -54,7 +54,7 @@
 					<ul class="nav navbar-nav">
 						<li><a href="/EPM-CAS/controller?command=show_direction"
 							class="hvr-bounce-to-bottom">Direction</a></li>
-						<li class="active"><a href="person.html">Persons</a></li>
+						<li class="active"><a href="/EPM-CAS/controller?command=show_person">Persons</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_rdm"
 							class="hvr-bounce-to-bottom">RDM</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_requisition"

@@ -52,7 +52,8 @@
 					id="bs-example-navbar-collapse-1">
 					<nav>
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="main.html">Direction</a></li>
+						<li class="active"><a
+							href="/EPM-CAS/controller?command=show_direction">Direction</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_person"
 							class="hvr-bounce-to-bottom">Persons</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_rdm"
