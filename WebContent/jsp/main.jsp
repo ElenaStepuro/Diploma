@@ -112,9 +112,9 @@
 							<option>Front-End Basics</option>
 						</select> <span class="input-group-addon" id="basic-addon2">RDM</span> <select
 							class="form-control" name="select-rdm">
-							<option selected="LastName FirstName">LastName FirstName</option>
-							<option>LastName FirstName</option>
-							<option>LastName FirstName</option>
+							<option selected="LastName FirstName">Gorbachev Klim</option>
+							<option>Lotsmanov Alexander</option>
+							<option>Pikulin Dmitriy</option>
 						</select>
 					</div>
 
@@ -171,9 +171,9 @@
 							<option>Front-End Basics</option>
 						</select> <span class="input-group-addon" id="basic-addon2">RDM</span> <select
 							class="form-control" name="select-rdm">
-							<option selected="LastName FirstName">LastName FirstName</option>
-							<option>LastName FirstName</option>
-							<option>LastName FirstName</option>
+							<option selected="LastName FirstName">Gorbachev Klim</option>
+							<option>Lotsmanov Alexander</option>
+							<option>Pikulin Dmitriy</option>
 						</select>
 					</div>
 
@@ -236,8 +236,8 @@
 			<tbody>
 				<tr>
 					<td rowspan="2">1</td>
-					<td rowspan="2">Direction1</td>
-					<td rowspan="2">rdm1</td>
+					<td rowspan="2">Software Testing Automation Basics</td>
+					<td rowspan="2">Gorbachev Klim</td>
 					<td rowspan="2">active</td>
 					<td><a href="#">Edit</a></td>
 				</tr>
@@ -247,8 +247,8 @@
 
 				<tr>
 					<td rowspan="2">2</td>
-					<td rowspan="2">Direction2</td>
-					<td rowspan="2">rdm2</td>
+					<td rowspan="2">Java Web Programming</td>
+					<td rowspan="2">Lotsmanov Alexander</td>
 					<td rowspan="2">active</td>
 					<td><a href="#">Edit</a></td>
 				</tr>
@@ -258,9 +258,9 @@
 
 				<tr>
 					<td rowspan="2">3</td>
-					<td rowspan="2">Direction3</td>
-					<td rowspan="2">rdm3</td>
-					<td rowspan="2">active</td>
+					<td rowspan="2">Front-End Basics</td>
+					<td rowspan="2">Pikulin Dmitriy</td>
+					<td rowspan="2">not active</td>
 					<td><a href="#">Edit</a></td>
 				</tr>
 				<tr>
@@ -311,7 +311,7 @@
 				<div class="clearfix"></div>
 			</div>
 			<div class="footer-copy">
-				<p>Â© 2017 EPAM Company. All rights reserved | Design by ""</p>
+				<p>© 2017 EPAM Company. All rights reserved | Design by "Stepuro Elena"</p>
 			</div>
 		</div>
 	</div>

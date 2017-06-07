@@ -94,54 +94,56 @@
 			</div>
 
 			<!-- edit requisition -->
-			<form action="controller" method="get">
-				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
-					data-wow-delay="500ms">Edit requisition</h3>
+			<c:if test="${!com.equals('EDIT') }">
+				<form action="controller" method="get">
+					<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+						data-wow-delay="500ms">Edit requisition</h3>
 
-				<div class="input-group animated wow fadeInUp"
-					data-wow-duration="1000ms" data-wow-delay="500ms">
-					<span class="input-group-addon" id="basic-addon3"
-						placeholder="course title">Course title</span> <input type="text"
-						class="form-control"> <span class="input-group-addon"
-						id="basic-addon2">Training direction</span> <select
-						class="form-control" name="select-direction">
-						<option selected="Java Web Programming">Java Web
-							Programming</option>
-						<option>Web Development in C# and Microsoft.Net</option>
-						<option>Software Testing Automation Basics</option>
-						<option>Business Analysis in IT</option>
-						<option>Front-End Basics</option>
-					</select><span class="input-group-addon" id="basic-addon2">Course
-						type</span>
-					<div class="col-lg-6 in-gr-tb">
-						<div class="input=group">
-							<div class="input=group-addon">
-								<input type="radio" name="command" value="external"><span>
-									external</span>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3"
+							placeholder="course title">Course title</span> <input type="text"
+							class="form-control"> <span class="input-group-addon"
+							id="basic-addon2">Training direction</span> <select
+							class="form-control" name="select-direction">
+							<option selected="Java Web Programming">Java Web
+								Programming</option>
+							<option>Web Development in C# and Microsoft.Net</option>
+							<option>Software Testing Automation Basics</option>
+							<option>Business Analysis in IT</option>
+							<option>Front-End Basics</option>
+						</select><span class="input-group-addon" id="basic-addon2">Course
+							type</span>
+						<div class="col-lg-6 in-gr-tb">
+							<div class="input=group">
+								<div class="input=group-addon">
+									<input type="radio" name="command" value="external"><span>
+										external</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 in-gr-tb">
+							<div class="input=group">
+								<div class="input=group-addon">
+									<input type="radio" name="command" value="internal"><span>
+										internal</span>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 in-gr-tb">
-						<div class="input=group">
-							<div class="input=group-addon">
-								<input type="radio" name="command" value="internal"><span>
-									internal</span>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="grid_3 grid_5 animated wow fadeInUp"
-					data-wow-duration="1000ms" data-wow-delay="500ms">
-					<h2>
-						<a href="/EPM-CAS/controller?command=add_requisition"><span
-							class="label label-warning">Update requistion</span></a>
-					</h2>
-					<h2>
-						<a href="#"><span class="label label-warning">Cancel</span></a>
-					</h2>
-				</div>
-			</form>
+					<div class="grid_3 grid_5 animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<h2>
+							<a href="/EPM-CAS/controller?command=add_requisition"><span
+								class="label label-warning">Update requistion</span></a>
+						</h2>
+						<h2>
+							<a href="#"><span class="label label-warning">Cancel</span></a>
+						</h2>
+					</div>
+				</form>
+			</c:if>
 			<!-- //edit requisition -->
 
 			<!-- add requisition -->
@@ -209,7 +211,7 @@
 				<table class="table table-bordered">
 					<thead>
 						<tr>
-							<th>#</th>
+							<th>Course title</th>
 							<th>Training direction</th>
 							<th>Course type</th>
 							<th colspan="2">Change</th>
@@ -217,8 +219,8 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td rowspan="2">1</td>
-							<td rowspan="2">Direction1</td>
+							<td rowspan="2">AT:IN_17_1</td>
+							<td rowspan="2">Software Testing Automation Basics</td>
 							<td rowspan="2">internal</td>
 							<td><a href="#">Edit</a></td>
 						</tr>
@@ -227,8 +229,8 @@
 						</tr>
 
 						<tr>
-							<td rowspan="2">2</td>
-							<td rowspan="2">Direction2</td>
+							<td rowspan="2">J:EX_17_1</td>
+							<td rowspan="2">Java Web Programming</td>
 							<td rowspan="2">external</td>
 							<td><a href="#">Edit</a></td>
 						</tr>
@@ -237,8 +239,8 @@
 						</tr>
 
 						<tr>
-							<td rowspan="2">3</td>
-							<td rowspan="2">Direction3</td>
+							<td rowspan="2">FE:IN_16_1</td>
+							<td rowspan="2">Front-End Basics</td>
 							<td rowspan="2">internal</td>
 							<td><a href="#">Edit</a></td>
 						</tr>

@@ -12,6 +12,12 @@
 	media="all" />
 <link href="/EPM-CAS/css/style.css" rel="stylesheet" type="text/css"
 	media="all" />
+<link href="/EPM-CAS/css/graph.css" rel="stylesheet" type="text/css"
+	media="all" />
+
+
+
+
 
 </head>
 <body>
@@ -119,24 +125,92 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>Student</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td>Vladimir Abramov</td>
+								<td>3</td>
+								<td>3</td>
+								<td>2</td>
+								<td>1</td>
+								<td>1</td>
+								<td>0</td>
+								<td>0</td>
+								<td>1</td>
+								<td>0</td>
+								<td>0</td>
+								<td>1</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Pavel Romanenko</td>
+								<td>3</td>
+								<td>3</td>
+								<td>1</td>
+								<td>2</td>
+								<td>1</td>
+								<td>2</td>
+								<td>2</td>
+								<td>1</td>
+								<td>0</td>
+								<td>2</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>Lada Chernysheva</td>
+								<td>1</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Sergey Micheev</td>
+								<td>3</td>
+								<td>3</td>
+								<td>1</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>3</td>
+								<td>1</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>Vladislav Gusev</td>
+								<td>3</td>
+								<td>3</td>
+								<td>1</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>3</td>
+								<td>1</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>1</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-
+				<div class="grid_3 grid_5 animated wow fadeInUp"
+					data-wow-duration="1000ms" data-wow-delay="500ms">
+					<h2>
+						<a href="/EPM-CAS/controller?command=add_requisition"><span
+							class="label label-warning">Save</span></a>
+					</h2>
+				</div>
+			</form>
+			<form action="controller" method="get">
 				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
 					data-wow-delay="500ms">Attendance</h3>
 				<div class="bs-docs-example animated wow fadeInUp"
@@ -158,28 +232,104 @@
 								<th>JDBC 4.0</th>
 								<th>Servlets basics</th>
 								<th>JSP basics</th>
+								<th>Average assessment</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Student</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+							<tr>
+								<td>Vladimir Abramov</td>
+								<td>2</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Pavel Romanenko</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Lada Chernysheva</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Sergey Micheev</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Vladislav Gusev</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
+				<div class="grid_3 grid_5 animated wow fadeInUp"
+					data-wow-duration="1000ms" data-wow-delay="500ms">
+					<h2>
+						<a href="/EPM-CAS/controller?command=add_requisition"><span
+							class="label label-warning">Save</span></a>
+					</h2>
+				</div>
+			</form>
 
+			<form action="controller" method="get">
 				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
 					data-wow-delay="500ms">Analysis</h3>
 				<div class="bs-docs-example animated wow fadeInUp"
@@ -205,19 +355,79 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>Student</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td>Vladimir Abramov</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+							</tr>
+							<tr>
+								<td>Pavel Romanenko</td>
+								<td>0.00</td>
+								<td>-2.00</td>
+								<td>-6.00</td>
+								<td>-6.00</td>
+								<td>-6.00</td>
+								<td>0.00</td>
+								<td>2.00</td>
+								<td>-14.00</td>
+								<td>-12.00</td>
+								<td>-14.00</td>
+								<td>-14.00</td>
+								<td>-8.00</td>
+							</tr>
+							<tr>
+								<td>Lada Chernysheva</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+							</tr>
+							<tr>
+								<td>Sergey Micheev</td>
+								<td>2.00</td>
+								<td>-2.00</td>
+								<td>-12.00</td>
+								<td>-12.00</td>
+								<td>-12.00</td>
+								<td>-6.00</td>
+								<td>-6.00</td>
+								<td>-8.00</td>
+								<td>-15.00</td>
+								<td>-9.00</td>
+								<td>-14.00</td>
+								<td>-8.00</td>
+							</tr>
+							<tr>
+								<td>Vladislav Gusev</td>
+								<td>-22.00</td>
+								<td>-10.00</td>
+								<td>-4.00</td>
+								<td>-4.00</td>
+								<td>-4.00</td>
+								<td>0.00</td>
+								<td>-4.00</td>
+								<td>-6.00</td>
+								<td>-15.00</td>
+								<td>-9.00</td>
+								<td>-14.00</td>
+								<td>-8.00</td>
 							</tr>
 						</tbody>
 					</table>
@@ -228,6 +438,9 @@
 			<!-- topic diagram -->
 			<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
 				data-wow-delay="500ms">Average lag by topics</h3>
+
+
+
 			<!-- // topic diagram -->
 
 		</div>
@@ -272,7 +485,7 @@
 				<div class="clearfix"></div>
 			</div>
 			<div class="footer-copy">
-				<p>© 2017 EPAM Company. All rights reserved | Design by ""</p>
+				<p>Â© 2017 EPAM Company. All rights reserved | Design by ""</p>
 			</div>
 		</div>
 	</div>

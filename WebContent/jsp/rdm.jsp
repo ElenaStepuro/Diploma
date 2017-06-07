@@ -56,7 +56,8 @@
 							class="hvr-bounce-to-bottom">Direction</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_person"
 							class="hvr-bounce-to-bottom">Persons</a></li>
-						<li class="active"><a href="/EPM-CAS/controller?command=show_rdm">RDM</a></li>
+						<li class="active"><a
+							href="/EPM-CAS/controller?command=show_rdm">RDM</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_requisition"
 							class="hvr-bounce-to-bottom">Requisition</a></li>
 						<li><a href="/EPM-CAS/controller?command=show_analys"
@@ -93,41 +94,44 @@
 			</div>
 
 			<!-- edit rdm -->
-			<form action="controller" method="get">
-				<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
-					data-wow-delay="500ms">Edit RDM</h3>
+			<c:if test="${!com.equals('EDIT') }">
+				<form action="controller" method="get">
+					<h3 class="bars animated wow fadeInUp" data-wow-duration="1000ms"
+						data-wow-delay="500ms">Edit RDM</h3>
 
-				<div class="input-group animated wow fadeInUp"
-					data-wow-duration="1000ms" data-wow-delay="500ms">
-					<span class="input-group-addon" id="basic-addon1">Lastname</span> <input
-						type="text" class="form-control" placeholder="lastname"> <span
-						class="input-group-addon" id="basic-addon2">Firstname</span> <input
-						type="text" class="form-control" placeholder="firstname">
-				</div>
-				<div class="input-group animated wow fadeInUp"
-					data-wow-duration="1000ms" data-wow-delay="500ms">
-					<span class="input-group-addon" id="basic-addon3">Patronymic</span>
-					<input type="text" class="form-control" placeholder="patronymic">
-					<span class="input-group-addon" id="basic-addon4">Position</span> <input
-						type="text" class="form-control" placeholder="position">
-				</div>
-				<div class="input-group animated wow fadeInUp"
-					data-wow-duration="1000ms" data-wow-delay="500ms">
-					<span class="input-group-addon" id="basic-addon3">Password</span> <input
-						type="text" class="form-control" placeholder="password">
-				</div>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon1">Lastname</span>
+						<input type="text" class="form-control" placeholder="Gorbachev">
+						<span class="input-group-addon" id="basic-addon2">Firstname</span>
+						<input type="text" class="form-control" placeholder="Klim">
+					</div>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3">Patronymic</span>
+						<input type="text" class="form-control" placeholder="Olegovich">
+						<span class="input-group-addon" id="basic-addon4">Position</span>
+						<input type="text" class="form-control"
+							placeholder="Testing resource manager">
+					</div>
+					<div class="input-group animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<span class="input-group-addon" id="basic-addon3">Password</span>
+						<input type="text" class="form-control" placeholder="password">
+					</div>
 
-				<div class="grid_3 grid_5 animated wow fadeInUp"
-					data-wow-duration="1000ms" data-wow-delay="500ms">
-					<h2>
-						<a href="/EPM-CAS/controller?command=add_rdm"><span
-							class="label label-warning">Update RDM</span></a>
-					</h2>
-					<h2>
-						<a href="#"><span class="label label-warning">Cancel</span></a>
-					</h2>
-				</div>
-			</form>
+					<div class="grid_3 grid_5 animated wow fadeInUp"
+						data-wow-duration="1000ms" data-wow-delay="500ms">
+						<h2>
+							<a href="/EPM-CAS/controller?command=add_rdm"><span
+								class="label label-warning">Update RDM</span></a>
+						</h2>
+						<h2>
+							<a href="#"><span class="label label-warning">Cancel</span></a>
+						</h2>
+					</div>
+				</form>
+			</c:if>
 			<!-- //edit rdm -->
 
 			<!-- add rdm -->
@@ -191,9 +195,9 @@
 					<tbody>
 						<tr>
 							<td rowspan="2">1</td>
-							<td rowspan="2">LastName FirstName Patronymic</td>
-							<td rowspan="2">Position1</td>
-							<td rowspan="2">Password</td>
+							<td rowspan="2">Gorbachev Klim Olegovich</td>
+							<td rowspan="2">Testing resource manager</td>
+							<td rowspan="2">Q45Ftg1524</td>
 							<td><a href="#">Edit</a></td>
 						</tr>
 						<tr>
@@ -202,9 +206,9 @@
 
 						<tr>
 							<td rowspan="2">2</td>
-							<td rowspan="2">LastName FirstName Patronymic</td>
-							<td rowspan="2">Position2</td>
-							<td rowspan="2">Password</td>
+							<td rowspan="2">Lotsmanov Alexander Patronymic</td>
+							<td rowspan="2">Java Programming resource manager</td>
+							<td rowspan="2">547FRGTset5</td>
 							<td><a href="#">Edit</a></td>
 						</tr>
 						<tr>
@@ -213,9 +217,9 @@
 
 						<tr>
 							<td rowspan="2">3</td>
-							<td rowspan="2">LastName FirstName Patronymic</td>
-							<td rowspan="2">Position3</td>
-							<td rowspan="2">Password</td>
+							<td rowspan="2">Pikulin Dmitriy Patronymic</td>
+							<td rowspan="2">Front-end resource manager</td>
+							<td rowspan="2">Gftb455FRT14</td>
 							<td><a href="#">Edit</a></td>
 						</tr>
 						<tr>
