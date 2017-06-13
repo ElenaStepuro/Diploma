@@ -1,4 +1,4 @@
-package com.epam.elena_stepuro.epm_cas.controller.command.add;
+package com.epam.elena_stepuro.epm_cas.controller.command.delete;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -6,25 +6,22 @@ import com.epam.elena_stepuro.epm_cas.controller.command.ActionCommand;
 import com.epam.elena_stepuro.epm_cas.controller.manager.ConfigurationManager;
 
 /**
- * ќписание: класс команды обработки данных добавлемого ресурсного менеджера
+ * ќписание: класс команды удалени€ ресурсного менеджера
  * 
  * @author ≈лена
  * @date June 10, 2017
- *
  */
-public class AddRDM implements ActionCommand {
+public class DeleteCommand implements ActionCommand {
 
 	/**
-	 * ќписание: получение данных с клиента и их обработка
+	 * ќписание: получение данных об удал€емом менеджере и их обработка
 	 * 
-	 * @return возвращает страницу, на которую переходит приложение, после
-	 *         выполнени€ команды
+	 * @return страницу, на которую переходит приложение после выполнени€
+	 *         команды
 	 * @author ≈лена
 	 */
 	public String execute(HttpServletRequest request) {
 		String page = null;
-		
-		
 
 		page = ConfigurationManager.getProperty("path.page.rdm");
 		return page;

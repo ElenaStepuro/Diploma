@@ -14,21 +14,33 @@ import com.epam.elena_stepuro.epm_cas.controller.manager.ConfigurationManager;
 import com.epam.elena_stepuro.epm_cas.controller.manager.MessageManager;
 
 /**
+ * Описание: класс контроллер для взаимодействия сервера и интерфейса
+ * пользователя
+ * 
  * Servlet implementation class FrontController
+ * 
+ * @author Елена
+ * @date June 10, 2017
  */
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
+	 * Описание: контруктор по умолчанию
+	 * 
 	 * @see HttpServlet#HttpServlet()
+	 * @author Елена
 	 */
 	public Controller() {
 		super();
 	}
 
 	/**
+	 * Описание: получение и обработка запроса клиента
+	 * 
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
+	 * @author Елена
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -36,14 +48,26 @@ public class Controller extends HttpServlet {
 	}
 
 	/**
+	 * Описание: 
+	 * 
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
+	 * @author Елена
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		processRequest(request, response);
 	}
 
+	/**
+	 * Описание:
+	 * 
+	 * @param request
+	 * @param response
+	 * @throws ServletException
+	 * @throws IOException
+	 * @author Елена
+	 */
 	private void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String page = null;
